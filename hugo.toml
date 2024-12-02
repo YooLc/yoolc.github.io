@@ -1,0 +1,58 @@
+baseurl = "https://yoolc.github.io"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+hasCJKLanguage = true
+theme = "terminal"
+
+[paginator]
+pagetSize = 5
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup]
+[markup.tableOfContents]
+endLevel = 3
+ordered = false
+startLevel = 2
+[markup.goldmark]
+[markup.goldmark.extensions]
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['$', '$']]
+
+[params]
+math = true
+contentTypeName = "posts"
+showMenuItems = 4
+fullWidthTheme = false
+centerTheme = true
+keywords = "computer architecture, free and open source software"
+subtitle = "A tiny hugo blogsite for some intresting idea"
+menuMore = "更多"
+readMore = "阅读更多"
+readOtherPosts = "阅读其他文章"
+[params.logo]
+logoText = "YooLc.github.io"
+logoHomeLink = "/"
+
+[languages]
+[languages.zh-cn]
+title = "YooLc.github.io"
+copyright = ""
+
+[languages.zh-cn.menu]
+[[languages.zh-cn.menu.main]]
+identifier = "system"
+name = "💻 计算机系统"
+url = "/posts/system"
+[[languages.zh-cn.menu.main]]
+identifier = "foss"
+name = "🍺 自由开源软件"
+url = "/posts/foss"
+[[languages.zh-cn.menu.main]]
+identifier = "about"
+name = "关于"
+url = "/about"
